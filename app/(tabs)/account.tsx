@@ -1,10 +1,15 @@
-import { Text } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
+import { Text, View } from "react-native";
+import Constants from "expo-constants";
 
 export default function Home() {
   return (
-    <SafeAreaView>
+    <View
+      style={{
+        marginTop: Constants.statusBarHeight,
+        flex: 1,
+      }}
+    >
       <Text>Account</Text>
-    </SafeAreaView>
+    </View>
   );
 }
